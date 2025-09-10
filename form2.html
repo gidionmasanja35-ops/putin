@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <style>
+        .lift {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f2f3f8;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+            gap: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .info-box i {
+            background: #22c55e;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .info-box h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            word-spacing: 100px;
+        }
+
+        .info-box p,
+        .info-box a {
+            margin: 2px 0 0;
+            font-size: 15px;
+            color: #d1d5db;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form select .contact-fumb {
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #1e293b;
+            color: #fff;
+            font-size: 15px;
+            wid
+        }
+
+        .contact-form input::placeholder {
+            color: #9ca3af;
+        }
+
+        .contact-form button {
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 1s;
+
+        }
+
+        .contact-form button:hover {
+            background: #16a34a;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row input,
+        .form-row select {
+            flex: 1;
+        }
+
+        .des {
+            width: 500px;
+        }
+
+        .fumb {
+            border-radius: 15px;
+            color: #0f172a;
+            resize: vertical;
+            min-height: 120px;
+        }
+    </style>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="lift">
+
+    <section class="contact-container">
+        <!-- Left Side Info -->
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+255 694 424 758</p>
+                </div>
+            </div> <br><br><br>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <a href="driven experince cafe35@gmail.com">driven experince cafe35@gmail.com</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Bagamoyo , Tanzania</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Right Side Form -->
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="last name" required>
+
+            </div>
+            <div class="sem">
+                <input type="email" placeholder="Your email" required>
+            </div>
+
+            <!-- <div class="form-row">
+                <input type="date">
+                <input type="number" placeholder="Number of People" min="1">
+            </div> -->
+            <div class="form-row">
+
+                <input type="Number" placeholder="phone Number" required>
+
+            </div>
+            <div class="fumb">
+                <textarea name=" message" rows="8" cols="50" style="width: 600px;">
+            you want to ask for...
+            </textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

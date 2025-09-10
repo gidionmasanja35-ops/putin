@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="shortcut icon" href="coffee-cup.png">
+
+</head>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+        margin-top: 70px;
+        margin-left: 50px;
+        background-color: aqua;
+
+    }
+
+    .card {
+        box-shadow: 0px 0px 12px 1px rgb(87, 86, 86);
+        background-color: white;
+        width: 400px;
+        margin: auto;
+        border-radius: 10px;
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        /* grid-template-columns: 3, 3fr;*/
+
+
+    }
+
+
+
+    input {
+        border: 0;
+        border-radius: 7px;
+        width: 100px;
+        color: white;
+        font-weight: 500;
+        background-color: green;
+        height: 30px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+
+    input:hover {
+        cursor: pointer;
+        background-color: orange;
+        transition: ease 2s;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+
+    h2 {
+        margin-left: 10px;
+        color: green;
+    }
+
+    .zoom-img {
+        width: 400px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .zoom-img img {
+        width: 100%;
+        transition: all .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .zoom-img img:hover {
+        transform: scale(1.2);
+        transition: ease 1s;
+        cursor: pointer;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: blue;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="card" id="ca">
+        <div class="zoom-img">
+            <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>Cappuccino New</h2>
+        <p>The cappuccino coffee is a mild, creamy brew with a velvety texture. Steamed milk highlights the bold, smooth
+            flavors of arabica espresso. The cappuccino is often presented in a large round coffee cup and is finished
+            with “latte art” and a dash of fine coffee powder.The cappuccino coffee is a mild, creamy brew with a
+            velvety texture. Steamed milk highlights the bold, smooth flavors of arabica
+            .</p>
+        <input type="submit" value="Order">
+
+
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="americano12.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>Americano </h2>
+        <p>Americano coffee is a type of coffee drink that is prepared by adding hot water to a shot of espresso, giving
+            it a milder flavor compared to straight espresso. This method of preparation dilutes the espresso, making it
+            more approachable for those who find espresso too strong or bitter. The drinks originated in different
+            regions (Italy/Spain and Australia/New Zealand, respectively),</p>
+        <input type="submit" value="Order">
+
+
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="pexels-chevanon-302899.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>Latte</h2>
+        <p>A latte is a milky coffee drink. It’s made with espresso and steamed milk. The typical latte has one or two
+            shots of espresso. This is topped with a lot of steamed milk. A thin layer of milk foam sits on top. Lattes
+            are known for their smooth, creamy taste. They’re less strong than plain espresso.. Latte or caffè latte,
+            also known as caffè e latte, caffellatte or caffelatte, is a coffee drink areknown
+            taste. </p>
+        <input type="submit" value="Order">
+
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="pexels-chevanon-302899.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>Turkish Coffee</h2>
+        <p>
+            Copilot Search Branding
+
+            Turkish coffee - Wikipedia
+            Turkish coffee is a traditional coffee preparation method known for its strong flavor, unique brewing
+            process, and cultural significance, often served with a side of water and sweets.
+            What is Turkish Coffee?
+            Turkish coffee is made using very finely ground coffee beans, typically brewed in a special pot called a
+            cezve (or ibrik). Unlike other coffee methods, Turkish coffee is unfiltered coffee</p>
+        <input type="submit" value="Order">
+
+
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>Espresso Coffee</h2>
+        <p>Espresso (/ɛˈsprɛsoʊ/ ⓘ, Italian: [eˈsprɛsso]) is a concentrated form of coffee produced by forcing hot water
+            under high pressure through finely ground coffee beans. Originating in Italy, espresso has become one of the
+            most popular coffee-brewing methods worldwide. It is characterized by its small serving size, typically
+            25–30 ml, and its distinctive layers: a dark body topped with a lighter-colored foam called "crema" coffee
+            available in all country
+        </p>
+        <input type="submit" value="Order">
+
+    </div>
+    <div class="card">
+        <div class="zoom-img">
+            <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+        </div>
+        <h2>TZ COFFEE</h2>
+        <p> is a concentrated form of coffee produced by forcing hot water
+            under high pressure through finely ground coffee beans. Originating in Italy, espresso has become one of the
+            most popular coffee-brewing methods worldwide. It is characterized by its small serving size, typically
+            25–30 ml, and its distinctive layers: a dark body topped with a lighter-colored foam called "crema" coffee
+            From pale region,massai,mburu
+            available in all country</p>
+        <input type="submit" value="Order">
+
+    </div>
+
+
+</body>
+
+</html>

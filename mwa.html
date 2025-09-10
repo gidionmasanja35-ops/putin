@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Cards</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            color: white;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px;
+        }
+
+        .card.blue img {
+            box-shadow: 0 0 20px #00f;
+        }
+
+        .card.pink img {
+            box-shadow: 0 0 20px #f0f;
+        }
+
+        .card.orange img {
+            box-shadow: 0 0 20px #f90;
+        }
+
+        .price {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            margin: 10px 0;
+        }
+
+        .stars span {
+            color: gold;
+            font-size: 1.2em;
+        }
+
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .card.blue .buy-btn {
+            background-color: #00f;
+        }
+
+        .card.pink .buy-btn {
+            background-color: #f0f;
+        }
+
+        .card.orange .buy-btn {
+            background-color: #f90;
+        }
+
+        img {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card blue">
+        <img src="fav.jpg" alt="">
+        <div class="price">$199</div>
+        <img src="smartwatch.png" alt="Smartwatch">
+        <div class="product-name">PRODUCT NAME</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="stars"><span>★ ★ ★ ★ ☆</span></div>
+        <button class="buy-btn">BUY NOW</button>
+    </div>
+
+    <div class="card pink">
+        <img src="image2_a3c8a541-0078-418e-9b53-ab6024e710cb.jpg" alt="">
+        <div class="price">$299</div>
+        <img src="headphones.png" alt="Headphones">
+        <div class="product-name">PRODUCT NAME</div>
+        <div class="description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="stars"><span>★ ★ ★ ★ ★</span></div>
+        <button class="buy-btn">BUY NOW</button>
+    </div>
+
+    <div class="card orange">
+        <div class="price">$149</div>
+        <img src="controller.png" alt="Game Controller">
+        <div class="product-name">PRODUCT NAME</div>
+        <div class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+        <div class="stars"><span>★ ★ ★ ☆ ☆</span></div>
+        <button class="buy-btn">BUY NOW</button>
+    </div>
+
+</body>
+
+</html>

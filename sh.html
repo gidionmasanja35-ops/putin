@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: darkslategray;
+    }
+
+    nav {
+        background-color: rgb(183, 25, 25);
+        height: 60px;
+        padding-top: 15px;
+        word-spacing: 30px;
+        position: fixed;
+        color: rgb(0, 109, 139);
+        width: 100%;
+        top: 0;
+        left: 0;
+
+
+
+    }
+
+    .box {
+        width: 500px;
+        height: 500px;
+        border: 2px solid #000;
+        margin: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: aliceblue;
+    }
+
+    /* Right paragraph (horizontal text) */
+    /* .right-text {
+       position: absolute;
+        top: 2rem;
+        
+         push it outside the box 
+        width: 400px;right: -420px;
+       paragraph width 
+        text-align: left;
+    }
+*/
+    .r {
+        display: inline-flex;
+        margin: auto;
+        margin-top: 7rem;
+    }
+
+    .link {
+        background-color: rgb(248, 243, 243);
+        height: 60px;
+        padding-top: 15px;
+        word-spacing: 30px;
+        position: fixed;
+        color: rgb(0, 109, 139);
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: 15px;
+        font-family: fantasy;
+        text-decoration: none;
+
+
+
+    }
+
+    .asu {
+        background-color: gold;
+        height: 70px;
+        padding: 5px 12px 12px 5px;
+        width: 100px;
+        border: 0;
+        margin-left: 800px;
+        border-radius: 5px;
+        font-size: 15px;
+
+        &:hover {
+            background-color: green;
+            color: white;
+            transition: ease 2s;
+        }
+    }
+
+
+
+    .card {
+        background-color: #1e1e1e;
+        border-radius: 15px;
+        width: 250px;
+        padding: 20px;
+        color: white;
+        position: relative;
+        margin-left: 6px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    /*.card.blue img {
+        box-shadow: 0 0 20px #00f;
+    }*/
+
+    .stars {
+        color: gold;
+        text-align: right;
+    }
+
+    .buy-btn {
+        background-color: aqua;
+
+        &:hover {
+            background-color: #00f;
+            transition: 2s;
+        }
+    }
+
+    .sound {
+
+        display: inline-flex;
+        margin-left: 5px;
+
+
+
+    }
+
+    section {
+        left: 0;
+    }
+
+    h2 {
+        margin-top: 5rem;
+    }
+</style>
+
+<body>
+    <nav class="link">
+        <a href="#home">home</a>
+        <a href="#">image</a>
+        <select name="image" id="i"></select>
+        <a href="#contact">contact</a>
+        <a href="#map">Location</a>
+
+        <!-- <a href="#form" class="asu">Askanything💬</a> -->
+    </nav>
+
+    <div class="r">
+        <div class="box">
+        </div>
+        <div class="right-text">
+            <h2>EZEKIEL</h2>
+            <p class="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                This paragraph is <br> placed on the right side of the box,
+                and the words are displayed straight and<br> horizontal, not rotated Lorem ipsum dolor, sit amet
+                consectetur
+                adipisicing elit. Mollitia <br>eaque atque non aliquam explicabo similique sed harum odio maiores
+                magni<br>
+                reiciendis, commodi architecto voluptates, repellendus quod, <br>iste sit quasi praesentium Lorem ipsum
+                dolor<br>
+                sit amet consectetur adipisicing elit. Illo distinctio fuga,<br> dolore dicta id vitae officiis sequi
+                culpa
+                illum rem quos nobis eaque? <br>Similique iure hic magni saepe cum repudiandae?
+            </p>
+        </div>
+
+    </div>
+
+
+    <section style="background-color: rgb(244, 244, 246);">
+
+        <div class="sound">
+            <div class="card blue">
+                <img src="fav.jpg" alt="">
+                <div class="product-name">PRODUCT NAME</div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="stars"><span>★ ★ ★ ★ ☆</span></div>
+                <!-- <button class="buy-btn">BUY NOW</button> -->
+            </div> &nbsp;&nbsp;
+
+            <div class="sound">
+                <div class="card blue">
+                    <img src="fav.jpg" alt="">
+                    <div class="product-name">PRODUCT NAME</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="stars"><span>★ ★ ★ ★ ☆</span></div>
+                    <!-- <button class="buy-btn">BUY NOW</button> -->
+                </div> &nbsp;&nbsp;
+
+                <div class="sound">
+                    <div class="card blue">
+                        <img src="fav.jpg" alt="">
+                        <div class="product-name">PRODUCT NAME</div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div class="stars"><span>★ ★ ★ ★ ☆</span></div>
+                        <!-- <button class="buy-btn">BUY NOW</button> -->
+                    </div> &nbsp;&nbsp;
+
+                    <div class="sound">
+                        <div class="card blue">
+                            <img src="fav.jpg" alt="">
+                            <div class="product-name">PRODUCT NAME</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="stars"><span>★ ★ ★ ★ ☆</span></div>
+                            <!-- <button class="buy-btn">BUY NOW</button> -->
+                        </div>
+
+
+                    </div>
+
+
+    </section>
+
+
+</body>
+
+</html>

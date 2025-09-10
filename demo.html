@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<style>
+    body {
+        background-color: #333;
+        background-image: url(fav.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+
+    @media only screen and (max-width:600px) {
+
+        .card {
+            margin-left: 15px;
+        }
+
+        .a {
+            font-size: 10px;
+        }
+
+        .h2 {
+            font-size: 20px;
+            color: #16a34a;
+        }
+    }
+
+
+    /* Medium screens (tablet) → 2 cards */
+    @media screen and (max-width: 992px) {
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Small screens (phone) → also 2 cards */
+    @media screen and (max-width: 600px) {
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover {
+            color: brown;
+            cursor: pointer;
+        }
+
+    }
+
+    .ask {
+        background-color: gold;
+        height: 70px;
+        padding: 5px 12px 12px 5px;
+        width: 100px;
+        border: 0;
+        margin-left: 800px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: green;
+            color: white;
+            transition: ease 2s;
+        }
+    }
+
+    div {
+        margin: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .card {
+        box-shadow: 0px 0px 12px 1px rgb(87, 86, 86);
+        background-color: white;
+        width: 400px;
+        margin-top: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-left: 10px;
+
+
+        /* grid-template-columns: 3, 3fr;*/
+
+
+    }
+
+    input {
+        border: 0;
+        border-radius: 7px;
+        width: 100px;
+        color: white;
+        font-weight: 500;
+        background-color: green;
+        height: 30px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    input:hover {
+        cursor: pointer;
+        background-color: orange;
+        transition: ease 2s;
+    }
+
+    h2 {
+        margin-left: 10px;
+        color: green;
+    }
+
+    .zoom-img {
+        width: 400px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .zoom-img img {
+        width: 100%;
+        transition: all .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .zoom-img img:hover {
+        transform: scale(1.2);
+        transition: ease 1s;
+        cursor: pointer;
+    }
+
+    section {
+        background-color: white;
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        margin-top: 15rem;
+    }
+
+    .sem {
+        font-size: 60px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aliceblue;
+
+
+    }
+
+    .me {
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: aliceblue;
+    }
+
+
+
+
+
+    input {
+        width: 250px;
+        height: 40px;
+        border: 0;
+        border-radius: 10px;
+        color: rgb(239, 235, 235);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        background-color: rgb(69, 55, 55);
+
+
+    }
+
+    textarea {
+        background-color: rgb(69, 55, 55);
+
+
+
+    }
+
+    .footerconteiner {
+        background-color: rgb(4, 4, 4);
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+
+
+
+    }
+
+    .socialIcon {
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+
+        margin-buttom: 10px;
+        height: 300px;
+
+
+    }
+
+    .mh {
+        width: 60px;
+        border-radius: 26px;
+        margin-top: rem;
+
+    }
+
+    a {
+
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    .saturn {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .cont a {
+        display: flex;
+
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+
+
+    }
+
+    .trou {
+        color: rgb(18, 19, 19);
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
+
+
+    }
+
+    .lift {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #f2f3f8;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        background: #0f172a;
+        /* dark background */
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /* Contact info */
+    .contact-info {
+        flex: 1;
+    }
+
+    .info-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 24px;
+        color: #22c55e;
+        /* green icon */
+    }
+
+    /* Form */
+    .contact-form {
+        flex: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .contact-form textarea {
+        grid-column: 1 / span 2;
+        min-height: 120px;
+    }
+
+    .contact-form button {
+        grid-column: 1 / span 2;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background: #22c55e;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* 📱 Responsive for all phones */
+    @media screen and (max-width: 768px) {
+        .contact-container {
+            flex-direction: column;
+        }
+
+        .contact-form {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-form textarea,
+        .contact-form button {
+            grid-column: unset;
+        }
+    }
+
+    .des {
+        width: 500px;
+    }
+
+    .fumb {
+        border-radius: 15px;
+        margin-left: 38PX;
+    }
+
+    .links {
+        width: 700px;
+        height: 400px;
+        margin: 50px;
+        margin: auto;
+        position: relative;
+        margin-left: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: #9ca3af;
+    }
+
+    /* Right paragraph (horizontal text) */
+    .right-text {
+        position: absolute;
+        top: 4rem;
+        right: -420px;
+        /* push it outside the box */
+        width: 400px;
+        /* paragraph width */
+        text-align: left;
+    }
+
+    .proh {
+        width: 700px;
+        height: 400px;
+
+
+    }
+
+    .living {
+        background-color: #a5a7a5;
+    }
+
+    .fux {
+        margin-top: 2rem;
+    }
+
+    .h2 {
+        color: #16a34a;
+    }
+
+    .online {
+        background-color: #16a34a;
+        border-radius: 15px;
+    }
+
+    .navbar-brand {
+        background-color: #16a34a;
+        border-radius: 15px;
+
+
+        &:hover {
+            background-color: #0f172a;
+            color: #9ca3af;
+
+        }
+    }
+
+    .button {
+        background-color: #16a34a;
+        border-radius: 15px;
+
+    }
+
+    .loc {
+        margin-top: 0.6rem;
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- <nav>
+        <a href="#home">home</a>
+        <a href="menu.html">menu</a>
+        <a href="#contact">contact</a>
+        <a href="#iframe">Location</a>
+
+        <a href="#form" class="ask">Askanything💬</a>
+
+    </nav> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ask">Askanything💬</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="demo.html">Home</a>
+                    <a class="nav-link" href="menu.html">menu</a>
+                    <a class="nav-link" href="#contact">contact</a>
+                    <a href="#iframe" class="loc">location</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 class="sem">Experience Driven Cafe</h1>
+    <p class="me"> A "Rost your Own" Workshop, where customers can learn the basics of coffee rosting and take home
+        their own
+        custom roasted beans or a "coffee & canvas" events, combining tasting with guided painting session.</p>
+    <!-- <div class="button">
+        <a href="#order" class="law"> Order Online</a>
+    </div> -->
+
+    <section id="order">
+        <div class="card" id="ca">
+            <div class="zoom-img">
+                <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>Cappuccino New</h2>
+            <p>The cappuccino coffee is a mild, creamy brew with a velvety texture. Steamed milk highlights the bold,
+                smooth
+                flavors of arabica espresso. The cappuccino is often presented in a large round coffee cup and is
+                finished
+                with “latte art” and a dash of fine coffee powder.The cappuccino coffee is a
+                velvety texture. Steamed milk highlights the bold, smooth flavors of arabica.</p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+
+        </div>
+
+        <div class="card">
+            <div class="zoom-img">
+                <img src="americano12.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>Americano </h2>
+            <p>Americano coffee is a type of coffee drink that is prepared by adding hot water to a shot of espresso,
+                giving
+                it a milder flavor compared to straight espresso. This method of preparation dilutes the espresso,
+                making it
+                more approachable for those who find espresso too strong or bitter. The drinks originated in different
+                regions (Italy/Spain and Australia/New Zealand,)</p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <img src="pexels-chevanon-302899.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>Latte</h2>
+            <p>A latte is a milky coffee drink. It’s made with espresso and steamed milk. The typical latte has one or
+                two
+                shots of espresso. This is topped with a lot of steamed milk. A thin layer of milk foam sits on top
+                are known for their smooth, creamy taste. They’re less strong than plain espresso.. Latte or caffè
+                also known as caffè e latte, caffellatte or caffelatte, is a coffee drink areknown
+                taste. </p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+        </div>
+
+        <div class="card">
+            <div class="zoom-img">
+                <img src="pexels-chevanon-302899.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>Turkish Coffee</h2>
+            <p>
+                Copilot Search Branding
+
+                Turkish coffee - Wikipedia
+                Turkish coffee is a traditional coffee preparation method known for its strong flavor, unique brewing
+                process, and cultural significance, often served with a side of water and sweets.
+                What is Turkish Coffee?
+                Turkish coffee is made using very finely ground coffee beans, typically brewed in a special pot called
+                a. Unlike other coffee methods, Turkish coffee is unfiltered coffee</p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>Espresso Coffee</h2>
+            <p> is a concentrated form of coffee produced by forcing hot
+                water
+                under high pressure through finely ground coffee beans. Originating in Italy, espresso has become one of
+                the
+                most popular coffee-brewing methods worldwide. It is characterized by its small serving size, typically
+                25–30 ml, and its distinctive layers: a dark body topped with a lighter-colored foam called "crema"<br>
+                coffee
+                available in all country
+            </p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <img src="Cappuccino.jpg" alt="This zooms-in really well and smooth">
+            </div>
+            <h2>TZ COFFEE</h2>
+            <p> is a concentrated form of coffee produced by forcing hot water
+                under high pressure through finely ground coffee beans. Originating in Italy, espresso has become one of
+                the
+                most popular coffee-brewing methods worldwide. It is characterized by its small serving size, typically
+                25–30 ml, and its distinctive layers: a dark body topped with a lighter-colored foam called "crema"
+                coffee
+                From pale region,massai,mburu
+            </p>
+            <a href="lafia.html"><input type="submit" value="Order"></a>
+
+        </div>
+    </section>
+
+    <!-- <div class="living">
+        <div class="links">
+            <iframe src="https://www.youtube.com/watch?v=TT9wIWPlOYs" frameborder="0" class="proh"></iframe>
+            <div class="right-text" id="fux">
+
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                This paragraph is placed on the right side of the box,
+                and the words are displayed straight and horizontal, not rotated.
+            </div>
+        </div>
+    </div> -->
+
+    <div class="contact-container">
+        <!-- Contact info -->
+        <div class="contact-info">
+            <div class="info-box">
+                <span class="icon">📞</span>
+                <p><strong>Phone</strong><br>+255 694 424 758</p>
+            </div>
+            <div class="info-box">
+                <span class="icon">✉️</span>
+                <p><strong>Email</strong><br>drivenexperiencecafe35@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name"> &nbsp;&nbsp;
+            <input type="text" placeholder="Last Name">&nbsp;&nbsp;
+            <input type="email" placeholder="Your Email">&nbsp;&nbsp;
+            <input type="number" placeholder="Phone Number">
+            <textarea placeholder="You want to ask for..."></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+    <div class="map">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.8257306621!2d38.87941315602403!3d-6.444963186949232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c917c91107053%3A0xaa179fd89cc76714!2sBagamoyo!5e0!3m2!1sen!2stz!4v1757081175502!5m2!1sen!2stz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="iframe"></iframe>
+    </div>
+
+
+
+
+
+    <div class="footerconteiner">
+
+        <div>
+            <h2 class="h2"> The Experience Driven Cafe</h2>
+            <img src="photo-1559925393-8be0ec4767c8.jpg" alt="" class="mh">
+
+        </div>
+        <div class="link">
+            <h2 class="h2">Quick link</h2>
+            <ul>
+                <li><a href="demo.html">home</a></li>&nbsp; &nbsp;
+                <li> <a href="menu.html">menu</a></li>&nbsp; &nbsp;
+                <li><a href="#order">Order Online</a></li>&nbsp; &nbsp;
+                <li><a href="#sou">Askanything💬</a></li>&nbsp; &nbsp;
+                <li> <a href="#Contact">contact</a></li>&nbsp; &nbsp;
+                <li> <a href="#iframe">Location</a></li>
+            </ul>
+        </div>
+
+
+        <div class="cont" id="contact" style="font-size: 10px;">
+            <h2 class="h2">Contact us</h2>
+            <a href="tel:+12345678" class="a"><i class="fa-brands fa-phone">+NO.:0694424758 💬</i></a>&nbsp;
+            <a href="https://wassm" class="a"><i class="fa-brands fa-whatsapp">+0694424758 </i></a>&nbsp;
+            <a href="driven experince cafe35@gmail.com" class="a">driven experince cafe35@gmail.com</a>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
